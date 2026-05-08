@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 ===================================
-AkshareFetcher - 主数据源 (Priority 0)
+AkshareFetcher - 主数据源 (Priority 1)
 ===================================
 
 数据来源：
@@ -265,7 +265,7 @@ class AkshareFetcher(BaseFetcher):
     """
     
     name = "AkshareFetcher"
-    priority = int(os.getenv("AKSHARE_PRIORITY", "0"))
+    priority = int(os.getenv("AKSHARE_PRIORITY", "1"))
     
     def __init__(self, sleep_min: float = 2.0, sleep_max: float = 5.0):
         """
